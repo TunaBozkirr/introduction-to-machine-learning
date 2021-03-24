@@ -1,0 +1,18 @@
+Homework 1
+1) How would you define Machine Learning?
+Makine Öğrenmesi girdiler ve çıktıların makine öğrenmesi modeline verilerek klasik programlama dışına çıkılarak bize bağlantıyı dönmesidir. Ayrıca verileri eğitip test ederek öğrenmesini pekiştirip doğrularız.
+2) What are the differences between Supervised and Unsupervised Learning? Specify example 3 algorithms for each of these.
+Denetimli öğrenme etiketlerin girdilerle beraber verilerek etiket tahmini, denetimsiz ise sadece verilerin verilmesi ve kümelenmesi yöntemlerine dayanır. 
+Denetimli : 1. Cilt kanseri tespiti (hasta veya değil) 2. Köpek teşhisi (Sınıflandırma problemi) 3. Dolar tahmini 
+Denetimsiz : 1. Müşteri Segmentasyonu  2. İntihal bulma 3. Öğrenci Başarı oranı kümeleme 
+3) What are the test and validation set, and why would you want to use them?
+Validation eğitim sırasında test gibi düşünebiliriz. Test ise eğitim sonrası öğrenip öğrenmediğini kontrol etmek için yapılır. Sonuç olarak modelin performansını değerlendiririz.
+4) What are the main preprocessing steps? Explain them in detail. Why we need to prepare our data?
+Duplicate veri tespiti, aynı satırlar çıkartılır. Veri ve çıktılar dengesiz ise dengelenmeye çalışır. Eksik değerler tespit edilir ve silinir yada uygun metotlarla doldurulur. Aykırı değer tespiti yapılır ve modele uygun yöntem belirlenerek bunlarla savaşılır.
+Standartlaştırma ve Normalizyon yapılır. Encoding yapılır (Nominal ve ordinal değerler sayısal değerlere dönüştürülür.) Gerekirse feature engineering yapılır.
+Verilerimizi modele uygun hale getirmek için önişlem yapılır.
+5) How you can explore and analyse countionus and discrete variables?
+Verilerimiz belirli bir aralıkta ise sürekli değişken, kesin nicel değerleri varsa ayrık değişkendir. Genellikle ayrık değişkenler sayılar olarak tanımlanır, ancak sürekli değişkenler ölçümler olarak tanımlanır.
+6) Analyse the plot given below. (What is the plot and variable type, check the distribution and make comment about how you can preproccess it.)
+Data süreklidir ve histogram plotla çizdirilmiştir. Türü floattır. Eşit bir dağılım yoktur(Imbalanced). Ayrıca positive skewed vardır. Veriler sola doğru yatkındır. Aykırı değer tespiti yapılıp, mücadele edilmesi gerekir.
+Feature scaling yapılması gerekir.
